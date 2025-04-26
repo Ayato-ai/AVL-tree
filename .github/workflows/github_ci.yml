@@ -23,4 +23,4 @@ jobs:
             mkdir build
             cmake -Bbuild -G "Unix Makefiles"       
             cmake --build build
-            ./build/bin/test_avl_tree
+            ./build/bin/test_AVL_TREE
