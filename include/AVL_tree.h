@@ -113,6 +113,7 @@ private:
 			min->left = left_tree;
 			return balance(min);
 		}
+		return nullptr;
 	};
 
 	Node* remove_min(Node* node) {
@@ -141,6 +142,7 @@ private:
 				return find(node->right, key);
 			else
 				return nullptr;
+		return nullptr;
 	};
 
 	void delete_AVL_tree(Node* node) {
