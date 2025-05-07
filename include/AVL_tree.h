@@ -64,7 +64,7 @@ private:
 			return left_turn(node);
 		}
 		if (balance_factor(node) == -2) {
-			if (balance_factor(node) > 0)
+			if (balance_factor(node->left) > 0)
 				node->left = left_turn(node->left);
 			return right_turn(node);
 		}
